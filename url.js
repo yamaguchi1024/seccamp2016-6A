@@ -7,6 +7,9 @@ function geturl() {
     alert("put input here");
   }
 
+  element.addEventListener('dialog',function(e){
+    window.open("data:text/html,"+e.messageText);
+  });
 }
 
 document.getElementById("Button").addEventListener("click",geturl);
